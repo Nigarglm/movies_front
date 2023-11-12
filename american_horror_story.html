@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American_Horror_Story</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kdam+Thmor+Pro&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd5494d35b.js" crossorigin="anonymous"></script>
+    <style>
+        #logo {
+            margin-left: 1cm;
+        }
+
+        #header,
+        body {
+            background-color: rgb(1, 1, 51);
+        }
+
+        .logoimg {
+            width: 100px;
+            position: absolute;
+        }
+
+        .logotext {
+            width: 20px;
+            margin-left: 3cm;
+            margin-top: 0.5cm;
+            position: absolute;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            color: white;
+        }
+
+        .searchButton {
+            margin-left: 7cm;
+            margin-top: 0.5cm;
+            position: absolute;
+            width: 600px;
+            border-radius: 45px;
+            border-color: red;
+            border-width: 3px;
+        }
+
+        #hr-header {
+            margin-top: 3cm;
+            border-radius: 45px;
+            color: white;
+        }
+
+        #vertical {
+            border-left: 1px solid white;
+            height: 1240px;
+            position: absolute;
+            margin-left: 7cm;
+            margin-top: -0.5cm;
+        }
+
+        .menyu {
+            margin-left: 1cm;
+        }
+
+        .menyutext1 {
+            color: white;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            margin-left: 0.1cm;
+        }
+
+        .menyutext {
+            color: white;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            margin-left: 1cm;
+            margin-top: -0.6cm;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            width: 1150px;
+            margin-left: 8cm;
+            margin-top: -7cm;
+        }
+
+        .card {
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .footercard {
+            background-color: rgb(1, 1, 51);
+        }
+
+        .footerlogoimg {
+            width: 100px;
+            margin-left: 18cm;
+        }
+
+        .footerlogotext {
+            width: 20px;
+            margin-left: 21cm;
+            margin-top: -2.5cm;
+            position: absolute;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            color: white;
+        }
+
+        .hr-footer {
+            color: white;
+            margin-top: 34cm;
+        }
+
+        .card-text {
+            color: white;
+            font-size: 15px;
+        }
+
+        .fa-brands,
+        .fa-solid {
+            color: white;
+        }
+
+        .contacttext1,
+        .contacttext2,
+        .contacttext3,
+        .contacttext4 {
+            color: white;
+            position: absolute;
+            margin-top: -0.1cm;
+        }
+
+        .contacttext1 {
+            margin-left: 8.5cm;
+        }
+
+        .contacttext2 {
+            margin-left: 14.5cm;
+        }
+
+        .contacttext3 {
+            margin-left: 20.5cm;
+        }
+
+        .contacttext4 {
+            margin-left: 28.5cm;
+        }
+
+        .fa-instagram {
+            margin-left: 7.5cm;
+            position: absolute;
+        }
+
+        .fa-facebook {
+            margin-left: 13.5cm;
+            position: absolute;
+        }
+
+        .fa-square-envelope {
+            margin-left: 19.5cm;
+            position: absolute;
+        }
+
+        .fa-phone {
+            margin-left: 27.5cm;
+            position: absolute;
+        }
+
+        .show-name {
+            color: white;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            margin-top: 4cm;
+            margin-left: 8cm;
+            position: absolute;
+        }
+
+        .show-img {
+            position: absolute;
+            margin-top: 7cm;
+            margin-left: 8cm;
+        }
+
+        .show-summary {
+            position: absolute;
+            margin-top: 7cm;
+            margin-left: 15cm;
+            color: white;
+        }
+
+        .show-language {
+            position: absolute;
+            color: white;
+            margin-top: 10cm;
+            margin-left: 15cm;
+        }
+
+        .show-genres {
+            position: absolute;
+            color: white;
+            margin-top: 11cm;
+            margin-left: 15cm;
+        }
+
+        .show-runtime {
+            position: absolute;
+            color: white;
+            margin-top: 12cm;
+            margin-left: 15cm;
+        }
+
+        .show-country {
+            position: absolute;
+            color: white;
+            margin-top: 13cm;
+            margin-left: 15cm;
+        }
+
+        .videobox {
+            position: absolute;
+            border: 3px solid black;
+            background-color: black;
+            width: 900px;
+            height: 500px;
+            margin-top: 6.5cm;
+            margin-left: 8cm;
+        }
+
+        .fragman {
+            margin-top: 5cm;
+            margin-left: 8cm;
+            position: absolute;
+            border-color: red;
+            background-color: rgba(0, 0, 255, 0.295);
+            border-width: 3px;
+            height: 1cm;
+        }
+
+        .altyazili {
+            position: absolute;
+            margin-top: 5cm;
+            margin-left: 11cm;
+            border-color: red;
+            background-color: rgba(0, 0, 255, 0.295);
+            border-width: 3px;
+            height: 1cm;
+        }
+
+        .dublaj {
+            position: absolute;
+            margin-top: 5cm;
+            margin-left: 14cm;
+            border-color: red;
+            background-color: rgba(0, 0, 255, 0.295);
+            border-width: 3px;
+            height: 1cm;
+        }
+
+        .but-text {
+            color: white;
+        }
+
+        .fa-play {
+            position: absolute;
+            margin-top: 12.5cm;
+            margin-left: 19.5cm;
+        }
+
+        .show-div {
+            margin-top: -11cm;
+            /* position: absolute; */
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="detailsContainer">
+    </div>
+
+    <header id="header">
+        <div id="logo">
+            <a href="file:///C:/Users/Work/Desktop/OnlaynFilmD%C3%BCnyas%C4%B1/index.html">
+                <img class="logoimg" src="https://cdn-icons-png.flaticon.com/512/2798/2798007.png"></img>
+                <p class="logotext">Onlayn Film Dünyası</p>
+            </a>
+        </div>
+        <div id="search">
+            <div>
+                <label for="movieSearch">
+                    <input type="search" name="search" class="searchButton"
+                        placeholder="Film və ya Serial axtar..."></input>
+                </label>
+    </header>
+
+    <hr id="hr-header">
+    <hr id="vertical">
+
+    <body>
+        <div class="menyu">
+            <h2 class="menyutext1">Menyu</h2><br>
+            <a style="text-decoration: none;"
+                href="file:///C:/Users/Work/Desktop/OnlaynFilmD%C3%BCnyas%C4%B1/index.html">
+                <i class="fa-solid fa-house"></i>
+                <p class="menyutext">Ana səhifə</p>
+            </a>
+            <a style="text-decoration: none;"
+                href="file:///C:/Users/Work/Desktop/OnlaynFilmD%C3%BCnyas%C4%B1/trendl%C9%99r.html">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <p class="menyutext">Trendlər</p>
+            </a>
+            <a style="text-decoration: none;"
+                href="file:///C:/Users/Work/Desktop/OnlaynFilmD%C3%BCnyas%C4%B1/seriallar.html">
+                <i class="fa-solid fa-clapperboard"></i>
+                <p class="menyutext">Seriallar</p>
+            </a>
+            <a style="text-decoration: none;"
+                href="file:///C:/Users/Work/Desktop/OnlaynFilmD%C3%BCnyas%C4%B1/filml%C9%99r.html">
+                <i class="fa-solid fa-film"></i>
+                <p class="menyutext">Filmlər</p>
+            </a>
+            <a style="text-decoration: none;"
+                href="file:///C:/Users/Work/Desktop/OnlaynFilmD%C3%BCnyas%C4%B1/sevilenler.html">
+                <i class="fa-solid fa-star"></i>
+                <p class="menyutext">Ən sevilənlər</p>
+            </a>
+        </div>
+
+        <button class="fragman">
+            <p class="but-text">Fragman</p>
+        </button>
+        <button class="altyazili">
+            <p class="but-text">Altyazılı</p>
+        </button>
+        <button class="dublaj">
+            <p class="but-text">Dublaj</p>
+        </button>
+        <div class="videobox"></div>
+        <i class="fa-solid fa-play"></i>
+
+        <div class="show-div">
+            <h2 class="show-name">American Horror Story</h2>
+            <img class="show-img" src="https://static.tvmaze.com/uploads/images/medium_portrait/473/1183640.jpg">
+            <p class="show-summary">American Horror Story is an horror television anthology series. Each season is
+                conceived as a self-contained miniseries, following a disparate set of characters and settings, and a
+                storyline with its own beginning, middle, and end. While some actors appear for more than one year, they
+                play completely different roles in each season.</p>
+            <p class="show-language">Language: English</p>
+            <p class="show-genres">Genres: Drama,Horror,Thriller</p>
+            <p class="show-runtime">Runtime: 60 minutes</p>
+            <p class="show-country">Country: United States</p>
+        </div>
+
+    </body><br><br><br>
+    <hr class="hr-footer">
+
+    <footer class="footer">
+        <div class="footercard">
+            <div class="card-header">
+                <div id="footerlogo text-center">
+                    <img class="footerlogoimg" src="https://cdn-icons-png.flaticon.com/512/2798/2798007.png"></img>
+                    <p class="footerlogotext">Onlayn Film Dünyası</p>
+                </div>
+            </div>
+            <div class="card-body text-center">
+                <p class="card-text">onlaynfilmdunyasi.com saytında yerləşdirilmiş filmlərin heç biri müəllif haqqlarını
+                    ihlal etmir.<br> Əgər belə bir vəziyyətin mövcudluğundan şübhələnir və ya narahatlıq hiss
+                    edirsinizsə onlaynfilmdunyasi@gmail.com e-mail ünvanına bildirin.</p>
+            </div><br>
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <p class="contacttext1">@onlaynfilmdunyasi</p>
+                <i class="fa-brands fa-facebook"></i>
+                <p class="contacttext2">onlaynfilmdunyasi</p>
+                <i class="fa-solid fa-square-envelope"></i>
+                <p class="contacttext3">onlaynfilmdunyasi@gmail.com</p>
+                <i class="fa-solid fa-phone"></i>
+                <p class="contacttext4">(+994) 22 539 12 36</p>
+            </div>
+        </div>
+        </div><br><br><br>
+    </footer>
+
+</body>
+
+</html>

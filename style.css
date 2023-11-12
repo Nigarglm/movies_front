@@ -1,0 +1,190 @@
+#logo{
+    margin-left: 1cm;
+}
+#header,body{
+    background-color: rgb(1, 1, 51);
+}
+.logoimg{
+    width: 100px;
+    position: absolute;
+}
+.logotext{
+    width: 20px;
+    margin-left: 3cm;
+    margin-top: 0.5cm;
+    position: absolute;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+}
+.searchButton{
+    margin-left: 7cm;
+    margin-top: 0.5cm;
+    position: absolute;
+    width: 600px;
+    border-radius: 45px;
+    border-color: red;
+    border-width: 3px;
+}
+.logbuttons{
+    margin-left: 32cm;
+    margin-top: 0.5cm;
+}
+.btn{
+    border-color: red;
+    background-color: rgba(0, 0, 255, 0.295);
+    border-width: 3px;
+}
+.modal-title{
+    color: black;
+}
+.modal-dialog{
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#hr-header{
+    margin-top: 1cm;
+    border-radius: 45px;
+    color: white;
+}
+#vertical {
+    border-left: 1px solid white;
+    height: 2395px;
+    position:absolute;
+    margin-left: 7cm;
+    margin-top: -0.5cm;
+}
+.menyu{
+    margin-left: 1cm;
+}
+.menyutext1{
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-left: 0.1cm;
+}
+.menyutext{
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-left: 1cm;
+    margin-top: -0.6cm;
+}
+.fa-solid{
+    color: white;
+}
+.categories{
+    margin-left: 8cm;
+    margin-top: -9cm;
+    display: flex; 
+    gap: 25px;
+}
+.cattext{
+    border-radius: 45px;
+    border-color: red;
+    border-width: 3px;
+    background-color: rgba(0, 0, 255, 0.295);
+    color: white;
+}
+.menyu-hr{
+    color: white;
+    width: 265px;
+    margin-top: 2cm;
+}
+#carouseltext{
+    margin-left: 8cm;
+    font-size: 40px;
+} 
+ .carouseltext{
+    color: red;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    width: 1150px;
+    margin-left: 8cm;
+}
+.card {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.trends{
+    margin-left: 1cm;
+    position: absolute;
+}
+.trendstext1{
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.trendstext{
+    color: white;
+}
+#carouselExampleCaptions{
+    width: 1150px;
+    margin-left: 8cm;
+}
+.footercard{
+    background-color: rgb(1, 1, 51);
+}
+.footerlogoimg{
+    width: 100px;
+    margin-left: 18cm;
+}
+.footerlogotext{
+    width: 20px;
+    margin-left: 21cm;
+    margin-top: -2.5cm;
+    position: absolute; 
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+}
+.hr-footer{
+    color: white;
+    margin-top: -0.05cm;
+}
+.card-text{
+    color: white;
+    font-size: 15px;
+}
+.fa-brands{
+    color: white;
+}
+.contacttext1, .contacttext2, .contacttext3, .contacttext4{
+    color: white;
+    position: absolute; 
+    margin-top: -0.1cm;
+}
+.contacttext1{
+    margin-left: 8.5cm;
+}
+.contacttext2{
+    margin-left: 14.5cm;
+}
+.contacttext3{
+    margin-left: 20.5cm;
+}
+.contacttext4{
+    margin-left: 28.5cm;
+}
+.fa-instagram{
+    margin-left: 7.5cm;
+    position: absolute;
+}
+.fa-facebook{
+    margin-left: 13.5cm;
+    position: absolute;
+}
+.fa-square-envelope{
+    margin-left: 19.5cm;
+    position: absolute;
+}
+.fa-phone{
+    margin-left: 27.5cm;
+    position: absolute;
+}
